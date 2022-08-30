@@ -22,7 +22,11 @@ An OS provides three essential capabilities:
 2. Application Management - An OS must handle the launch and management of every application. Typically supports an array of behvaiours including threads to enable processes to share access to processors. The OS may also support APIs which enable applications to utilise OS hardware functions without needing to know anything about the low-level OS or ahrdware state.
 3. Device Management - An OS is responsible for identifying, configuring, and providing applications with common access to hardware devices.
 
+<div align="center">
+
 ![OS](../images/OS.png)
+
+</div>
 
 Linux itself is a general purpose OS. This means that Linux is an OS like Windows, or macOS, which manages all of the hardware resources associated with a computer. Throughout this guide I will be using a PwnBox known as ParrotOS via [hackTheBox](https://academy.hackthebox.com/).
 

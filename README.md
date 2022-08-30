@@ -1,5 +1,9 @@
 # Linux In Depth
 
+<div align="center" >
+<img src="./images/linux.png" width="200px">
+</div>
+
 ___
 
 ## Contents

@@ -47,10 +47,6 @@ ___
 
 ___
 
-## Communication
-
-![OS Communication](../images/OS.png);
-
 
 <div align="right">
 
