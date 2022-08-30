@@ -50,5 +50,5 @@ ___
 
 <div align="right">
 
-[<< prev](./1_introduction.md) | [next >>](./)
+[<< prev](./1_introduction.md) | [next >>](./3_fileSystemHeirarchy.md)
 </div>
