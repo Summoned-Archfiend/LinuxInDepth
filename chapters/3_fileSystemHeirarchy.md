@@ -31,6 +31,19 @@ These directories can be described as such:
 
 ___
 
+<detials open>
+<summary>Linux Communication</summary>
+
+<div align="center">
+
+![communication](../images/linuxCommunication.jpg)
+
+</div>
+
+</details>
+
+___
+
 <div align="right">
 
 [<< prev](./2_phillosophy.md) | [next >>]()
