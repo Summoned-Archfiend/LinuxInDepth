@@ -11,6 +11,7 @@ ___
 1. [Introduction](./chapters/1_introduction)
 2. [Philosophy](./chapters/2_phillosophy.md)
 3. [File System Heirarchy](./chapters/3_fileSystemHeirarchy.md)
+4. [Parrot OS](./chapters/4_parrot)
 
 ___
 

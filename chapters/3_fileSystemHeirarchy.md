@@ -46,5 +46,5 @@ ___
 
 <div align="right">
 
-[<< prev](./2_phillosophy.md) | [next >>]()
+[<< prev](./2_phillosophy.md) | [next >>](./4_parrot.md)
 </div>
