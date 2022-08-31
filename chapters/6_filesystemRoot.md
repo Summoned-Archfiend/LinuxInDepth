@@ -25,4 +25,34 @@ Moving on, the usr/bin and usr/sbin directories are essentially the same as the 
 
 ![Which Command](../images/which.png)
 
-Notice that in either location we use the same ```ls``` command from the ```usr/bin``` directory. 
+Notice that in either location we use the same ```ls``` command from the ```usr/bin``` directory. This is because we are now a user, therefore we execute the commands from this location, during boot, essential binaries would instead be run from the previous ```bin``` location.
+
+If we head back to root, our next directory of interest is our ```local``` directory. If we list our files here, we once again find a familiar structure:
+
+![Linux Local](../images/local.png)
+
+This is a location where you can create your own commands, install your own software, outside of what is provided by the distro itself, without worry of overwriting distribution files.
+We then also have the /usr/lib directory, this contains libraries shared between the command binaries.
+
+Heading back into our root folder, we see a ```boot``` directory, you have probably already worked out, this contains boot files. We also have ```var```, if you have ever done any development on a Linux system, whether that be a server, docker container, vagrant, or even using htdoc directly on a server installed on your local machine, you will likely have seen this folder. This is the folder where your log files will live.  We then have ```tmp``` which, as you probably guessed, houses temporary files, only save things here that you don't mind losing after reboot.
+
+We should next inspect the ```home``` directory. Here you will see listed all of the users available on the system, you can even enter the user directory, list the directories owned by the user and you will find each of these users "homes" live within this ```home``` directory under their corresponding users directory. You may have noticed one user who doesn't have a home, the ```root``` user, this user has no home within the directory we just viewed, so where does he live?
+
+If we cd back into our root directory, you can find the root user in the ```root``` folder. The root user is special, to access root you need sudo access.
+
+![Root Home](../images/rootHome.png)
+
+Notice that this directory is identical to any other ```home``` directory, this is because ```root``` is a user like any other, but with additional privileges. You should only use ```root``` when necessary and never give root access to a program or person you don't trust.
+
+Earlier we mentioned even devices in our system are files. We can view these in our root/dev folder, where ```dev``` stands for devices.
+
+![Dev Directory](../images/dev.png)
+
+You will notice a lot going on in this folder, we have ```stdin``` (standard input), ```stdout``` (standard output), among other things. The thing we are going to look at right now is ```vda``` and ```vda1```, these are our "hard disks", where vd stands for virtual disk. On other systems you may see them listed instead as ```sda``` instead. Since this is also a file, we can actually output the contents of our disks to the console, however, this will lock the console due to continuous output, so we will have to ctrl + c to exit.
+
+Now, we know that everything in Linux is a file, earlier we mentioned settings and configurations were also files, if we wanted to access our network settings, where would we find this? the answer is in the ```etc``` directory, another name you may be familiar with as a dev, especially if you have ever had to search for apache2 or config files.
+
+<div align="right">
+
+[<< prev](./5_commands.md) | [next >>]()
+</div>
