@@ -14,6 +14,8 @@ ___
 4. [Parrot OS](./chapters/4_parrot)
 5. [Commands](./chapters/5_commands.md)
 6. [FileSystem Root](./chapters/6_filesystemRoot.md)
+7. [Terminal](./chapters/7_terminal.md)
+8. [Interacting With SHELLs](./chapters/8_SHELL.md)
 
 ___
 

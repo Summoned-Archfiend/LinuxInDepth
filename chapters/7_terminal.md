@@ -1,4 +1,4 @@
-# Terminal & Shell
+# Terminal
 
 The terminal is where we enter commands. It is a CLI, which enables us to interact with the OS. This is the most common way to interact with Linux, and the intended way, due to the control it gives the user over their machine. The thing is, that when we have been using the terminal via our GUI icon, we have actually not been using a "terminal" as such, but a terminal emulator.
 
@@ -30,5 +30,5 @@ ___
 
 <div align="right">
 
-[<< prev](./6_filesystemRoot.md) | [next >>]()
+[<< prev](./6_filesystemRoot.md) | [next >>](./8_SHELL.md)
 </div>

@@ -41,6 +41,7 @@ Linux has a vast array of commands, the Linux philosophy is such that each progr
 | lsblk | list block devices |
 | lsusb | list USB devices |
 | lsof | list open files |
+| apropos | search the manual page names and descriptions |
 
 </div>
 
