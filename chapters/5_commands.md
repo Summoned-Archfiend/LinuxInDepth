@@ -24,6 +24,8 @@ Linux has a vast array of commands, the Linux philosophy is such that each progr
 | rm | remove files or directories |
 | adduser, addgroup | add a user or group to the system |
 | which | locate command binary |
+| ps | Process Status - report a snapshot of the current processes. |
+
 
 </div>
 

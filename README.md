@@ -17,4 +17,6 @@ ___
 
 ___
 
+<div align="right">
+
 [next >>](./chapters/1_introduction)

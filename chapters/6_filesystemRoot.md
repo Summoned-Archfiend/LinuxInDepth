@@ -68,5 +68,5 @@ ___
 
 <div align="right">
 
-[<< prev](./5_commands.md) | [next >>]()
+[<< prev](./5_commands.md) | [next >>](./7_terminal.md)
 </div>
