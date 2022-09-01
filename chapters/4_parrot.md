@@ -10,6 +10,8 @@ When booting into Parrot OS you are greeted with a desktop as such:
 
 We will not be using the GUI very much, the true power of Linux systems lies within the terminal (CLI).
 
+___
+
 <div align="right">
 
 [<< prev](./3_fileSystemHeirarchy.md) | [next >>](./4_parrot.md)

@@ -12,6 +12,8 @@ ___
 2. [Philosophy](./chapters/2_phillosophy.md)
 3. [File System Heirarchy](./chapters/3_fileSystemHeirarchy.md)
 4. [Parrot OS](./chapters/4_parrot)
+5. [Commands](./chapters/5_commands.md)
+6. [FileSystem Root](./chapters/6_filesystemRoot.md)
 
 ___
 

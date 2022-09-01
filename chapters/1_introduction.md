@@ -31,6 +31,7 @@ An OS provides three essential capabilities:
 Linux itself is a general purpose OS. This means that Linux is an OS like Windows, or macOS, which manages all of the hardware resources associated with a computer. Throughout this guide I will be using a PwnBox known as ParrotOS via [hackTheBox](https://academy.hackthebox.com/).
 
 
+___
 
 <div align="right">
 

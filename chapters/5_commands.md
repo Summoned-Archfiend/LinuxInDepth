@@ -29,6 +29,8 @@ Linux has a vast array of commands, the Linux philosophy is such that each progr
 
 </details>
 
+___
+
 <div align="right">
 
 [<< prev](./4_parrot.md) | [next >>](./6_filesystemRoot.md)

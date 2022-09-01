@@ -52,6 +52,20 @@ You will notice a lot going on in this folder, we have ```stdin``` (standard inp
 
 Now, we know that everything in Linux is a file, earlier we mentioned settings and configurations were also files, if we wanted to access our network settings, where would we find this? the answer is in the ```etc``` directory, another name you may be familiar with as a dev, especially if you have ever had to search for apache2 or config files.
 
+We have many config files in here, but we will focus on the ```network``` config for now. Enter the ```network``` directory and we can list our files. If we cat the interfaces file we should see the configuration for our network interfaces, if we ever wanted to change the network settings we would enter this file to change the contents.
+
+![Network Directory](../images/networkConfig.png)
+
+Lets get back to ```root```. Take note of two other directories here, the ```mnt``` and the ```media``` directories. These two directories share a common function, they both mount drives. When you plug in a USB flash drive for instance, it will automagically be added to the media directory as a file. The difference here is that the ```media``` directory mounts drives automagically, like our example of mounting a flash drive, however, the ```mnt``` directory is for drives that we might mount, these don't occur automagically and instead are mounted manually.
+
+<br />
+
+___
+
+If you would like to review any of these, please see the quick reference in [Chapter 3](./3_fileSystemHeirarchy.md).
+
+___
+
 <div align="right">
 
 [<< prev](./5_commands.md) | [next >>]()
