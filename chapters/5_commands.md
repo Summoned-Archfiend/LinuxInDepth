@@ -24,8 +24,23 @@ Linux has a vast array of commands, the Linux philosophy is such that each progr
 | rm | remove files or directories |
 | adduser, addgroup | add a user or group to the system |
 | which | locate command binary |
+| who | show who is logged on |
 | ps | Process Status - report a snapshot of the current processes. |
-
+| id | print real and effective user and group IDs |
+| hostname | show or set the system's host name |
+| domainname | show or set the system's NIS/YP domain name |
+| ypdomainname | show or set the system's NIS/YP domain name |
+| nisdomainname | show or set the system's NIS/YP domain name |
+| dnsdomainname | show the system's DNS domain name |
+| ifconfig | configure a network interface |
+| uname | print system information |
+| ip | show / manipulate routing, network devices, interfaces and tunnels |
+| netstat | Print network connections, routing tables, interface statistics, masquerade connections, and multicast memberships |
+| ss | Session Stuff - another utility to investigate sockets |
+| env | Environment Variables - run a program in a modified environment |
+| lsblk | list block devices |
+| lsusb | list USB devices |
+| lsof | list open files |
 
 </div>
 
