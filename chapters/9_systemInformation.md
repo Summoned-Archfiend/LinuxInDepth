@@ -26,6 +26,7 @@ A quick google search and we immediately find a link of interest.
 
 It is highly recommended that you study the Man pages for commands, to understand what they are for and what information they can provide. Though this can be tedious we can learn a lot from studying the man pages.
 
+___
 
 <div align="right">
 
