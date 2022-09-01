@@ -16,6 +16,7 @@ ___
 6. [FileSystem Root](./chapters/6_filesystemRoot.md)
 7. [Terminal](./chapters/7_terminal.md)
 8. [Interacting With SHELLs](./chapters/8_SHELL.md)
+9. [System Information](./chapters/9_systemInformation.md)
 
 ___
 
