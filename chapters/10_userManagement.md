@@ -12,7 +12,11 @@ In viewing this file we see an output as such:
 
 <br />
 
-In this output we see a lot of data per user. First of all we notice the name of the user, we will focus on the final user ```thor```. Here we see most of our users are superseded by an ```x```. This ```x``` indicates to use that this user has a ```password``` set in another file known as the ```shadow file```. 
+In this output we see a lot of data per user. First of all we notice the name of the user, we will focus on the final user ```thor```. Here we see most of our users are superseded by an ```x```. This ```x``` indicates to use that this user has a ```password``` set in another file known as the ```shadow file```, this is located within the ``etc`` directory under ``shadow``. If we cat this file we can see a list of yet more information, but we should be able to also see any user we created. For me this is ``Thor``, next to the user you should be able to see a hashed version of their ``password``.
+
+Next to the ``x`` in our ```passwd``` file, you see two numbers. In the above image it is ```1001/1004``` this is the ```User ID (UID)``` and ```Group ID (GID)```. Notice that all we did here was create a user, yet Linux created both a user and a group of the same name.
+
+At the end of here, after the username, we see the ``home`` directory for the user, and finally at the very end of the line we have the users default ```SHELL```, in ``Thors`` case this is ```BASH```.
 
 <br />
 
