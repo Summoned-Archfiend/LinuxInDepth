@@ -84,6 +84,7 @@ group:x:1013:user
 | userdel | delete a user account and related files |
 | groupadd | create a new group |
 | groups | print the groups a user is in |
+| gpasswd | administer /etc/group and /etc/gshadow |
 
 </div>
 
