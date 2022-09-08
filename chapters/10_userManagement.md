@@ -34,6 +34,41 @@ We can edit the `sudoers` file to add an entry for our newly created user, after
 
 <br />
 
+<image src="../images/sudoers_file.png" alt="sudoers">
+
+<br />
+
+When running `visudo` we see the above file, scrolling down through the file we can see the two lines of interest which are displayed in the above screenshot. This includes our user privilege specification and a group named `sudo` (groups being defined by a `%` symbol). Any member of this group has access to ultimate power, notice the end command `NOPASSWD: ALL` this means that any user in this group can conduct any command at all,
+and will never be prompted for a password to do so.
+
+In this file we can set up a user, in doing so we must provide an argument as to what systems he has power over `ALL` indicates all systems, and then provide what actions he can perform, in this case `ALL` for instance would mean he can perform any action, this could be limited to only creating users or other specific tasks.
+
+<pre>
+<code>
+root    ALL = ALL
+</code>
+</pre>
+
+We can then add users to a sudo group using `usermod`:
+
+<pre>
+<code>
+
+sudo usermod -aG groupName userName
+
+</code>
+</pre>
+
+the `G` flag alone will add a user to a group, however, it will add it to the specified group but also eliminate all other groups, to avoid this we pass the `a`ppend flag. If we want to check this change occurred we can do so by catting the `/etc/group` file we should be able to see our user appended to the group:
+
+<pre>
+<code>
+group:x:1013:user
+</code>
+</pre>
+
+<br />
+
 <details open>
 <summary>Commands</summary>
 
@@ -46,12 +81,16 @@ We can edit the `sudoers` file to add an entry for our newly created user, after
 | usermod | modify a user account |
 | su | run a command with substitute user and group ID |
 | visudo | edit the sudoers file |
+| userdel | delete a user account and related files |
+| groupadd | create a new group |
+| groups | print the groups a user is in |
 
 </div>
 
 </details>
 
 ___
+
 
 <div align="right">
 
