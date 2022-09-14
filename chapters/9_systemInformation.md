@@ -30,5 +30,5 @@ ___
 
 <div align="right">
 
-[<< prev](./8_SHELL.md) | [next >>]()
+[<< prev](./8_SHELL.md) | [next >>](./10_userManagement.md)
 </div>

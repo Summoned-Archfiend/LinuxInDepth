@@ -95,5 +95,5 @@ ___
 
 <div align="right">
 
-[<< prev](./4_parrot.md) | [next >>](./6_filesystemRoot.md)
+[<< prev](./9_systemInformation.md) | [next >>](./11_packageManagement.md)
 </div>
