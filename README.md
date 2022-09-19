@@ -17,6 +17,8 @@ ___
 7. [Terminal](./chapters/7_terminal.md)
 8. [Interacting With SHELLs](./chapters/8_SHELL.md)
 9. [System Information](./chapters/9_systemInformation.md)
+10. [User management](./chapters/10_userManagement.md)
+11. [Package management](./chapters/11_packageManagement.md)
 
 ___
 
