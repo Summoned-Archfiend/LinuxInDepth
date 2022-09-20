@@ -68,5 +68,5 @@ ___
 
 <div align="right">
 
-[<< prev](./10_userManagement.md) | [next >>](./)
+[<< prev](./10_userManagement.md) | [next >>](./12_daemons.md)
 </div>

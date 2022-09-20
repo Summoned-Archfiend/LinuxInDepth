@@ -19,6 +19,7 @@ ___
 9. [System Information](./chapters/9_systemInformation.md)
 10. [User management](./chapters/10_userManagement.md)
 11. [Package management](./chapters/11_packageManagement.md)
+12. [Daemons]()
 
 ___
 
