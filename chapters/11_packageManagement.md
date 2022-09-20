@@ -62,6 +62,7 @@ Some package managers come with additional features. In the modern era many pack
 
 Another type of package manager is stores. A store is exactly the same as other package managers, except, instead of fetching from a central repository, they fetch from an app store. This is similar to the `play` store with google or the `apple` store, these stores are often browsable via a webpage, but we can easily install them via package managers like `snap`.
 
+Lastly, an important note on package managers. When we `remove` an application via package managers like `dpkg` and `apt` this is a "safe" option in which user data is preserved. If instead, we wish to remove all traces of an application we want to run the `purge` command.
 
 ___
 
