@@ -30,6 +30,7 @@ While many Linux distros have standardised to use `Systemd` as the master `Daemo
 | systemctl is-active `service` | check a `service` is active |
 | systemctl list-units | list the units (`Daemons`) that systemd currently has in memory |
 | systemctl list-unit-files | list all units whether loaded into memory or not |
+| journalctl | journal/logs for systemd |
 
 </div>
 
