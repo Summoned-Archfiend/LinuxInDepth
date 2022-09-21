@@ -97,6 +97,15 @@ If we mask the ntp service:
 
 A symlink is created within `/dev/null`. This is equivalent of running the `ln -s` command, writing the output to the `/dev/null` path. This is what it means for a service to be `masked`, this will show when we check the `status` command on a masked service, this will show the service as `masked`.  If you boot the system with a unit masked, it will not run even if the service is required to satisfy dependencies. You should ensure you know what you are doing before masking units.there is the potential to prevent a system booting normally if an essential service is masked (e.g. `system.slice`).
 
+![NTP Start Masked](../images/ntpMasked.png)
+
+If we try to start a masked service, we get an error describing exactly why we cannot start the service. If we want to start this service, we have to `unmask` the service first.
+
+![Ntp Enable Mask](../images/enableMaskNtp.png)
+
+If we try to enable a service, the same rules apply. This can be useful if we need to "sleep" a service to prevent it interfering with other services, for instance,
+if we are performing some setup, using `firewall` services, installations, etc... we sometimes have to mask and unmask services to prevent them interfering whilst we perform our tasks.
+
 ___
 
 <div align="right">
