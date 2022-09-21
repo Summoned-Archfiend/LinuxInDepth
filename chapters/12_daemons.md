@@ -26,6 +26,10 @@ While many Linux distros have standardised to use `Systemd` as the master `Daemo
 | systemctl restart `service` | restart a `daemon` or `service` |
  systemtl reload `daemon` | reload a configuration, not every `service` or `daemon` can do this |
  | systemctl reload-or-restart `service` | reload a `service` if possible, otherwise just `restart` |
+ | systemctl enable/disable `service` | enable/disable automatic startup of a `service` or `daemon` on system start |
+| systemctl is-active `service` | check a `service` is active |
+| systemctl list-units | list the units (`Daemons`) that systemd currently has in memory |
+| systemctl list-unit-files | list all units whether loaded into memory or not |
 
 </div>
 
