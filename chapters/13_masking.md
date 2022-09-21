@@ -106,6 +106,42 @@ If we try to start a masked service, we get an error describing exactly why we c
 If we try to enable a service, the same rules apply. This can be useful if we need to "sleep" a service to prevent it interfering with other services, for instance,
 if we are performing some setup, using `firewall` services, installations, etc... we sometimes have to mask and unmask services to prevent them interfering whilst we perform our tasks.
 
+`Targets`, as we have previously covered, are a specific daemon type that describe the `state` that we want our system to be in. We can thing of `target` as being the state which we want our system to reach. In this system we interact mostly with `multi-user.target` which contains a list of steps needed to undergo to attain the target state. We can check these dependencies via the command: `sudo systemctl list-dependencies multi-user.target`, this will work for any `service` but for `targets` is particularly useful as we can see which services will be started in order to achieve the target state.
+
+![list dependencies](../images/listDependencies.png)
+
+There are many services listed, far too many to display here. You will notice this is in a tree format, these are all the services which must be started to reach the target state. `Targets` can also be nested within the `target` itself. For instance, `systemd` itself has a default target that it uses when it boots the system, this is the system state we want to have, known as the overall system state.
+
+We can see this `systemd` default target with a single command: `sudo systemctl get-default`, as you can see below, the default is `graphical.target`, our graphical login service, we can take a deeper look at this by listing the dependencies of `graphical.target`.
+
+![Default Target](../images/getDefault.png)
+
+In listing the dependencies of `graphical.target` we can see this contains the dependency `multi-user.target` meaning that this target will start up on boot in order to reach the target state declaration set out by `graphical.target`. The system will be ready to go when the specification of `graphical.target` has been met. We can log out another target and inspect some of the contents of it's declarations.
+
+
+<pre>
+<code>
+#  SPDX-License-Identifier: LGPL-2.1-or-later
+#
+#  This file is part of systemd.
+#
+#  systemd is free software; you can redistribute it and/or modify it
+#  under the terms of the GNU Lesser General Public License as published by
+#  the Free Software Foundation; either version 2.1 of the License, or
+#  (at your option) any later version.
+
+[Unit]
+Description=Multi-User System
+Documentation=man:systemd.special(7)
+Requires=basic.target
+Conflicts=rescue.service rescue.target
+After=basic.target rescue.service rescue.target
+AllowIsolate=yes
+</code>
+</pre>
+
+We see that we have a description, some documentation, we can see that this unit requires `basic.target`, we have two conflicts, `rescue.service` and `rescue.target`. This is actually a full mode of itself, it is similar to safe mode on Windows, called isolation. We can run isolation via the command: `sudo systemctl isolate rescue.target`, this runs only the services required to reach the `target` in isolation, everything else will be disabled. 
+
 ___
 
 <div align="right">
