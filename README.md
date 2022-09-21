@@ -20,7 +20,7 @@ ___
 10. [User management](./chapters/10_userManagement.md)
 11. [Package management](./chapters/11_packageManagement.md)
 12. [Daemons](./chapters/12_daemons.md)
-13. [Masking]
+13. [Masking](./chapters/13_masking.md)
 
 ___
 
