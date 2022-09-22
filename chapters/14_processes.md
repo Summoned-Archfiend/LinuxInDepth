@@ -63,7 +63,7 @@ In the above example we start two services, first of all we begin a ping with a 
 
 ![Background](../images/background.png)
 
-# Foreground a Process
+## Foreground a Process
 
 Using the jobs command we can list all background processes. Backgrounded processes do not require much interaction, and we can use the same shell session without waiting until the process finishes first. Once the scan or processes finishes, we are notified by the terminal. If we wish to pull the background process into the foreground so that we may interacti with it again we can use the forground command `fg`.
 
@@ -73,7 +73,41 @@ Using the jobs command we can list all background processes. Backgrounded proces
 
 # Executing Multiple Commands
 
+There are three possibilities to run several commands, one after the other, there are separated by:
+
+- Semicolon (`;`)
+- Double `ampersand` characters (`&&`)
+- Pipes (`|`)
+
+The difference between them lies in how the precious process is treated. Treatment depends on whether the previous process exited successfully or with errors. For instance, the semicolon (`;`) is a command separator and executes the commands by ignoring the previous commands results and errors:
+
+![Semicolon Operator](../images/smicolonoperator.png)
+
+We can execute the same command and replace the second echo with an `ls` command to show what will happen if there is an error, the commands succeeding the command which errored will execute regardless.
+
+![Semicolon Error](../images/semierror.png)
+
+However, this looks very different if we use the double `ampersand` characters to run the commands one after the other. If there is an error in one of the commands, the succeeding commands will no longer be executed and the whole process will abruptly halt.
+
+![Ampersand Error](../images/ampersanderr.png)
+
+Pipes (`|`) depend not only on the correct and error free operation of the previous processes, but also on the previous processes results. We often think of pipes as the logical `OR` and `ampersands` as the logical `AND` operators.
+
+## Process Management
+
+So, how do we view processes? we have seen a way to view `jobs`, process which have essentially been `paused`, `suspended`, `put on hold`, but what about te other processes? for this we can use the `ps` command. Running `ps` without any arguments will show only the processes running within our session. We can provide flags and options to the `ps` command to get more output, including listing all of our processes, or specific processes. If we `suspend` a process it will be displayed in `ps`, if we are still in the same `session` we can even list it without passing additional arguments:
+
+![PS](../images/PSCommand.png)
+
+This is also true if we `background` the process. We can find all of our processes for a particular user by passing the `-u` flag, we can also pipe our output to grep to search for a particular process, in this case `firefox`. Note that in this example we have previously set our username to a variable to make it easier to use, this is possible via `user=$(whoami)`.
+
+![User Processes](../images/firefoxustproc.png)
+
+<br />
+
+___
+
 <div align="right">
 
-[<< prev](./13_masking.md.md) | [next >>](./)
+[<< prev](./13_masking.md.md) | [next >>]()
 </div>
