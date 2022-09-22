@@ -21,6 +21,7 @@ ___
 11. [Package management](./chapters/11_packageManagement.md)
 12. [Daemons](./chapters/12_daemons.md)
 13. [Masking](./chapters/13_masking.md)
+14. [Processes](./chapters/14_processes.md)
 
 ___
 

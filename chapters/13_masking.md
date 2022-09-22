@@ -140,11 +140,12 @@ AllowIsolate=yes
 </code>
 </pre>
 
-We see that we have a description, some documentation, we can see that this unit requires `basic.target`, we have two conflicts, `rescue.service` and `rescue.target`. This is actually a full mode of itself, it is similar to safe mode on Windows, called isolation. We can run isolation via the command: `sudo systemctl isolate rescue.target`, this runs only the services required to reach the `target` in isolation, everything else will be disabled. 
+We see that we have a description, some documentation, we can see that this unit requires `basic.target`, we have two conflicts, `rescue.service` and `rescue.target`. This is actually a full mode of itself, it is similar to safe mode on Windows, called isolation. We can run isolation via the command: `sudo systemctl isolate rescue.target`, this runs only the services required to reach the `target` in isolation, everything else will be disabled.
 
 ___
 
 <div align="right">
 
-[<< prev](./12_daemons.md) | [next >>]()
+[<< prev](./12_daemons.md) | [next >>](../chapters/14_processes.md)
+
 </div>
