@@ -21,6 +21,9 @@ Processes can be controlled with various commands we have covered, some aditiona
 | kill | Send a signal to a process  |
 | pgrep, pkill, pidwait | look up, signal, or wait for processes based on name and other attributes |
 | killall | kill processes by name |
+| ps | report a snapshot of current processes |
+| top | display linux processes |
+| htop | interactive processes viewer |
 
 </div>
 
@@ -103,11 +106,25 @@ This is also true if we `background` the process. We can find all of our process
 
 ![User Processes](../images/firefoxustproc.png)
 
+We can find all of our processes for a particular user using `ps -u <USER>`, it is often easier to grep the specific process we are looking for however, as the output can often be large.
+
+![User Processes All](../images/userProcesses.png)
+
+Here we can see all of our PIDs, but the command itself is rather long. In Linux there are many ways to achieve the same goal, however, we can find a shorter method with one of the commands we have already listed previously: `pgrep`. The `pgrep` command is a command which combines the functionality of both `ps` and `grep` (general regular expression print). If we run this command passing a process name as an argument we receive the `PID` for that process, in our case `pgrep firefox` returns `7855`, we can use this to find an unruly process `PID` to suspend or even kill that process.
+
+A common pattern you will see is the command `ps -aux`. If we take a look at the help page for `ps -aux` (simple format) we can see what each flag will do for us:
+
+![ps aux](../images/psAux.png)
+
+We can see that `-a` gives us all with a `tty` which includes other users (all users), `-x` gives us the processes without controlling `ttys` (all the processes, not executed by this terminal session) and `-u` the user that the process belongs to.
+
+We can use the `top` command to list all of our processes, ordered by `cpu` usage. We also have a prettier version of this in the form of `htop`.
+
 <br />
 
 ___
 
 <div align="right">
 
-[<< prev](./13_masking.md.md) | [next >>]()
+[<< prev](./13_masking.md.md) | [next >>](../chapters/15_webservices.md)
 </div>
