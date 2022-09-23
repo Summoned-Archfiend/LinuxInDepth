@@ -30,6 +30,41 @@ We can "talk" to our servers, and any external servers, using the `curl` command
 
 <br />
 
+We can also use `curl` to save the content we view to files using the `-o` flag.
+
+<br />
+
+![Google Source](../images/googleSource.png)
+
+<br />
+
+We can even use `curl` to analyse how a client talks to the `server` and vice versa using the `-I` flag.
+
+<br />
+
+
+![Curl Response header](../images/curlInvestigate.png)
+
+<br />
+
+This is a response header from the server. It shows us the type of content being received, the date it was received, the protocol used, the status of the message, the encoding, the cookie being saved, the server, and more. This is only one side of the conversation however, any devs will know that in order to get a `response` from the `server` a `request` must first be made, and we can also take a look at the `request` headers being sent. We can do this using the `-v` flag (or switch): `curl -v localhost:<PORT>`the encoding, the cookie being saved, and more.
+
+
+<br />
+
+![Curl Request header](../images/curlverbose.png)
+
+<br />
+
+We can see which is the `response` header and which is the `request` header by the direction the parentheses are pointing: `>` = request, `<` = response.
+We may also use a tool similar to `curl` called `wget`, using `wget` we can download a target page.
+
+<br />
+
+![Wget Download](../images/wget.png)
+
+<br />
+
 ___
 
 <div align="right">
