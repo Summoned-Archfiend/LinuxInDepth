@@ -4,7 +4,7 @@ Linux is a computer Operating System (OS) created in the 90's by a the Finnish e
 
 The OS is initially loaded into computer memory by a boot program, the OS manages all other application programs on a computer by allowing application programs to make use of it by making requests for services through a defined Application Programming Interface (API). This allows users to interact directly with the OS through a User Interface (UI), this can be a Graphical User Interface (GUI) or a Command Line interface (CLI).
 
-An OS brings powerful benefits to the use and development of computer software. Without an OS, every application would need to include it's own UI, as well ass comprehensive code necessary for handling all low-level functionality of the underlying computer, this would have to include processes such as disk storage, network interfaces, hardware interactions, and everything else...
+An OS brings powerful benefits to the use and development of computer software. Without an OS, every application would need to include it's own UI, as well as comprehensive code necessary for handling all low-level functionality of the underlying computer, this would have to include processes such as disk storage, network interfaces, hardware interactions, and everything else...
 
 This would be highly problematic for engineers developing software as the hardware of each individual machine may change considerably. This would also vastly increase the size of every application and make developing new software highly impractical.
 
