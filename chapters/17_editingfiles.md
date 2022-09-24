@@ -13,23 +13,14 @@ In doing so you will be met with a editor page, you will notice that you are una
 <details open>
 <summary>VIM Modes</summary>
 
+___
+
 ## Normal
 
 We begin in `Normal` mode, in this mode you are totally unable to insert any character what so ever. This is also known as command mode because any keystroke you enter will be interpreted as a `command`, for instance pressing `K` will move the cursor position up one line, similarly `yy` will copy the current line, `gg"+yG` would yank from the whole file to the clipboard, this is essentially copying the whole file, which can then be pasted with `"+p`, pressing `o` will create a new line for text above the current cursor location. `Normal` mode is necessary for saving out files, or quitting `vim`.
 
-## Insert
-
-Insert mode is where we are able to actually enter our text into a file, in this mode every character we type inserts at the cursor location. To enter `insert` mode we press `i` from `normal` mode, we can then enter our text, we can exit back to normal mode via the escape key `ESC`, at which point we can use the commands `:wq` to write and quit or `:q!` to simply quit, with other commands available too.
-
-## Visual
-
-In visual mode we can select text to perform operations such as cut, copy, paste, &delete. To switch to visual mode we can enter `v`, `V`, `SHIFT + V`, or `CTRL + v` from `normal` mode.
-
-
-</details>
-
-<details open>
-<summary>Normal Mode Commands</summary>
+<details>
+<summary>Commands</summary>
 
 | Command | Description |
 | --- | --- |
@@ -62,6 +53,21 @@ In visual mode we can select text to perform operations such as cut, copy, paste
 | dd | cut the current line |
 | u | undo last change |
 | Ctrl + R | redo |
+
+</details>
+
+___
+
+## Insert
+
+Insert mode is where we are able to actually enter our text into a file, in this mode every character we type inserts at the cursor location. To enter `insert` mode we press `i` from `normal` mode, we can then enter our text, we can exit back to normal mode via the escape key `ESC`, at which point we can use the commands `:wq` to write and quit or `:q!` to simply quit, with other commands available too.
+
+___
+
+## Visual
+
+In visual mode we can select text to perform operations such as cut, copy, paste, &delete. To switch to visual mode we can enter `v`, `V`, `SHIFT + V`, or `CTRL + v` from `normal` mode.
+
 
 </details>
 
