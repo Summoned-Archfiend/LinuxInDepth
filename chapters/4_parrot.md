@@ -14,5 +14,5 @@ ___
 
 <div align="right">
 
-[<< prev](./3_fileSystemHeirarchy.md) | [next >>](./4_parrot.md)
+[<< prev](./3_fileSystemHeirarchy.md) | [next >>](./5_commands.md)
 </div>

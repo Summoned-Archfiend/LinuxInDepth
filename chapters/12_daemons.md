@@ -42,5 +42,5 @@ ___
 
 <div align="right">
 
-[<< prev](./11_packageManagement.md) | [next >>](./12_daemons.md)
+[<< prev](./11_packageManagement.md) | [next >>](./13_masking.md)
 </div>

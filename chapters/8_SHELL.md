@@ -43,5 +43,5 @@ ___
 
 <div align="right">
 
-[<< prev](./7_terminal.md) | [next >>]()
+[<< prev](./7_terminal.md) | [next >>](./9_systemInformation.md)
 </div>
