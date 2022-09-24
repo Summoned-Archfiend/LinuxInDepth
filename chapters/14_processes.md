@@ -126,5 +126,5 @@ ___
 
 <div align="right">
 
-[<< prev](./13_masking.md.md) | [next >>](../chapters/15_webservices.md)
+[<< prev](./13_masking.md.md) | [next >>](./15_webservices.md)
 </div>
