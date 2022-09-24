@@ -87,5 +87,5 @@ ___
 
 <div align="right">
 
-[<< prev](./13_masking.md.md) | [next >>]()
+[<< prev](./13_masking.md.md) | [next >>](../chapters/16_navigation.md)
 </div>
