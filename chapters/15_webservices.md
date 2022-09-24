@@ -69,6 +69,22 @@ We may also use a tool similar to `curl` called `wget`, using `wget` we can down
 
 ___
 
+<div style="font-size: .7em">
+
+<br />
+
+**\*** Please note that everything detailed here <br /> can easily be found by inspecting the `man` pages.
+
+<br />
+
+When in doubt, ask the `man`!
+
+</div>
+
+<br />
+
+___
+
 <div align="right">
 
 [<< prev](./13_masking.md.md) | [next >>]()
