@@ -24,6 +24,8 @@ ___
 14. [Processes](./chapters/14_processes.md)
 15. [Web Services](./chapters/15_webservices.md)
 16. [Navigating Linux](./chapters/16_navigation.md)
+17. [Editing Files](./chapters/17_editingfiles.md)
+
 ___
 
 - [Kasm](https://github.com/Summoned-Skali/IntroductionToKasmDockerGUI)

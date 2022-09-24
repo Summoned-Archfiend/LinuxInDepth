@@ -26,7 +26,8 @@ Thus far we have covered the main `Navigatoinal` tools of linux, this is mostly 
 
 If we want to move a file, we can do so using `mv` (move), we can also move a directory with this command. We can even move directories and their contents making this a powerful, but potentially dangerous, command. We can copy files and directories using `cp` but may need to do so recursively if we have a directory of multiple files `-r`.  We can check our filesystem tree using the `tree` command.
 
-Try out different switches from the `man` file, for instance, if we use `ls` we can order the output using `-ltc` to show us the files by the order of last created, this can be useful if we want to find the file last changed, or if we are seeking a specific backup date.
+Try out different switches from the `man` file, for instance, if we use `ls` we can order the output using `-ltc` to show us the files by the order of last created, this can be useful if we want to find the file last changed, or if we are seeking a specific backup date. It is important to practice all of these commands, more so,
+to actually read through the `man` pages and learn to understand their layout, they will often tell you exactly how to use the command if you know how to read it, but even that can take practice. My Advice, try them out, use a containerised environment as to build confidence, run each command, set yourself a goal and try to replicate that state with the commands, the more you use them, the better, if you work on Linux systems this is where you will have the advantage using these commands day-in-day-out will help cement your knowledge, you can even take up writing about it, don't worry about getting the details perfect, just about getting your thoughts down, in this way you cement your knowledge in long term memory, and who knows, possibly help someone else who is on the same journey after you.
 
 <br />
 
@@ -43,5 +44,5 @@ ___
 
 <div align="right">
 
-[<< prev](./13_masking.md.md) | [next >>]()
+[<< prev](./15_webservices.md) | [next >>](./17_editingfiles.md)
 </div>
