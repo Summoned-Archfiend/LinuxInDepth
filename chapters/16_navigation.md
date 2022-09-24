@@ -22,8 +22,22 @@ When writing console commands remember, the console is your friend, it is there 
 
 Another way we can list commands is using `compgen`, with a number of switches we can list all of the commands we have access to (`-c`), all of the aliases (`-a`), all of the built-ins (`-b`), keywords (`-k`), functions (`-A`). We can even combine the above into a single command `compgen -A -abck`, remember we can also search these lists using a general regex expression (`grep`).
 
+Thus far we have covered the main `Navigatoinal` tools of linux, this is mostly for getting around the filesystem, however, it is also important to know how to create, edit, move, and remove files and directories. The `touch` command for instance allows us to create new files, the same command for directories is `mkdir`. Touch can be a difficult one for newcomers to remember, `mkdir` however is relatively easy (Make Directory).
+
+If we want to move a file, we can do so using `mv` (move), we can also move a directory with this command. We can even move directories and their contents making this a powerful, but potentially dangerous, command. We can copy files and directories using `cp` but may need to do so recursively if we have a directory of multiple files `-r`.  We can check our filesystem tree using the `tree` command.
+
+Try out different switches from the `man` file, for instance, if we use `ls` we can order the output using `-ltc` to show us the files by the order of last created, this can be useful if we want to find the file last changed, or if we are seeking a specific backup date.
+
 <br />
 
+___
+
+<div style="font-size: .7em">
+
+If it isn't obvious, the best way to understand these commands is to check the `man` entry, <br /> but also to try these out as you read through.
+
+
+</div>
 
 ___
 
