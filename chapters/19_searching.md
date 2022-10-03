@@ -55,6 +55,16 @@ find / -iname "*.conf" -size +25k -size -28k -newermt 2020-03-03 2>/dev/null
 | `-exec ls -al {} \`| Executes the specified command, curly braces as placeholders for each result, backslash escapes the next character, and semicolon to terminate |
 | `2>/dev/null` | `STDERR` redirection to the `null device` this redirection ensures no errors are displayed in the terminal |
 
+<br />
+
+We can take this further by following the Linux philosophy. We know that each command in Linux does just one thing well. We also know we can extend functionality by piping the output of our commands into other commands, as such, we can do things like attaining a count of all backup files by piping our results into the word count program `wc`.
+
+<pre>
+<code>
+find / -name *.bak 2>/dev/null | wc -l
+</code>
+</pre>
+
 </details>
 
 </details>
