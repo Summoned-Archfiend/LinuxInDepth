@@ -176,5 +176,6 @@ ___
 
 <div align="right">
 
-[<< prev](./17_editingfiles.md) | [next >>]()
+[<< prev](./17_editingfiles.md) | [next >>](./19_searching.md)
+
 </div>

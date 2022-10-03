@@ -49,6 +49,8 @@ Another useful tool is find. Besides merely being used to find files and folders
 
 <br />
 
+<div align="center">
+
 <details open>
 <summary>Locate</summary>
 
@@ -65,3 +67,13 @@ The disadvantage here is the lack of filter options, and as mentioned prior, the
 </div>
 
 </details>
+
+</div>
+
+___
+
+<div align="right">
+
+[<< prev](./18_kernel.md) | [next >>]()
+
+</div>
