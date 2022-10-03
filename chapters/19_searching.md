@@ -28,6 +28,20 @@ Another useful tool is find. Besides merely being used to find files and folders
 
 <img src="../images/findFlags.png" >
 
+<br />
+
+We can even raise flags multiple times in our commands to perform more advanced searches. In the case below we search for a conf file between `25kb` and `28kb` in size, as well as being created after the date: `2020-03-03`. We use a case insensitive version of the `name` pattern match `iname`, atop of this we redirect errors so that none are shown int the terminal `2>/dev/null`.
+
+<br />
+
+<pre>
+<code>
+find / -iname "*.conf" -size +25k -size -28k -newermt 2020-03-03 2>/dev/null
+
+/usr/share/drirc.d/00-mesa-defaults.conf
+</code>
+</pre>
+
 <details open>
 <summary>options</summary>
 
@@ -69,6 +83,9 @@ The disadvantage here is the lack of filter options, and as mentioned prior, the
 </details>
 
 </div>
+
+<br />
+
 
 ___
 
