@@ -78,9 +78,9 @@ Now that we have the types of Kernel out of the way, it is important to understa
 
 Meanwhile, the OS tracks the system performance and memory load. Tasks such as memory, task, process, and disk management, ensuring that proper communication between the hardware and software can be instantiated.
 
-The kernel continues to run in the background memory until the computer is shut down, it takes care of various operations. Certain processes need to communicate with the OS, in order to do so they must first send the request to some intermediary between them. This intermediary is the kernel. This is what we refer to as "system alls", these invoke the kernel so that the users requested operations are performed.
+The Kernel continues to run in the background memory until the computer is shut down, it takes care of various operations. Certain processes need to communicate with the OS, in order to do so they must first send the request to some intermediary between them. This intermediary is the Kernel. This is what we refer to as "system alls", these invoke the Kernel so that the users requested operations are performed.
 
-It is important to note that not all users can access the kernel data as it is loaded into the protected memory of the OS, reserved for only the specified purpose, this is known as the "kernel space". Adversely, any application, other than the kernel, runs in what is known as "user space". Users usually deal witht he lowest level of the kernel, where the kernel communicates directly with the OS. hardware and software communication is not possible directly, due to the fact that the OS only understands binary or "Machine code", natural language must first be converted and interpreted by a system. In this manner, the kernel is a direct link between the hardware and software layer:
+It is important to note that not all users can access the Kernel data as it is loaded into the protected memory of the OS, reserved for only the specified purpose, this is known as the "Kernel space". Adversely, any application, other than the Kernel, runs in what is known as "user space". Users usually deal witht he lowest level of the Kernel, where the Kernel communicates directly with the OS. hardware and software communication is not possible directly, due to the fact that the OS only understands binary or "Machine code", natural language must first be converted and interpreted by a system. In this manner, the Kernel is a direct link between the hardware and software layer:
 
 <br />
 
@@ -92,7 +92,7 @@ It is important to note that not all users can access the kernel data as it is l
 <details open>
 <summary>Process Management</summary>
 
-Processes are the things currently running on the OS. As each process requests access to some hardware, disk, memory, etc... the kernel is the thing which controls which processes are to be distributed to which process, and when. The information between these processes is shared in order to allow proper synchronisation.
+Processes are the things currently running on the OS. As each process requests access to some hardware, disk, memory, etc... the Kernel is the thing which controls which processes are to be distributed to which process, and when. The information between these processes is shared in order to allow proper synchronisation.
 
 </details>
 
@@ -119,7 +119,7 @@ One of the most core functions of the OS is to manage all devices associated wit
 <details open>
 <summary>Memory Management</summary>
 
-Initially all the processes are saved on the disk. Here, they have space allotted, this acts as a kind of "pool" of processes. The process of transferring these from the disk space to the main space in which they run on the foreground is what we mean when we say "memory management". The kernel moves the processes back and forth in the same way, keeping track of all allocated space. The decision of freeing up or assigning memory to any given process is performed in memory management, with three types of addressing; symbolic, relative, physical.
+Initially all the processes are saved on the disk. Here, they have space allotted, this acts as a kind of "pool" of processes. The process of transferring these from the disk space to the main space in which they run on the foreground is what we mean when we say "memory management". The Kernel moves the processes back and forth in the same way, keeping track of all allocated space. The decision of freeing up or assigning memory to any given process is performed in memory management, with three types of addressing; symbolic, relative, physical.
 
 </details>
 
@@ -133,7 +133,7 @@ Initially all the processes are saved on the disk. Here, they have space allotte
 <details open>
 <summary>Interrupt Handling</summary>
 
-There is a specific section of the kernel which conducts interrupt handling. When a system call is made, a signal is sent to the kernel requesting resources, the kernels interrupt handler is responsible for "handling" this signal. A process may continue to work until it is interrupted by another process. Once this alternative processes interrupt signal is sent, and requested to be brought to main memory, the task allocation itself is conducted by the Kernel, which reviews the most suitable interrupts.
+There is a specific section of the Kernel which conducts interrupt handling. When a system call is made, a signal is sent to the Kernel requesting resources, the kernels interrupt handler is responsible for "handling" this signal. A process may continue to work until it is interrupted by another process. Once this alternative processes interrupt signal is sent, and requested to be brought to main memory, the task allocation itself is conducted by the Kernel, which reviews the most suitable interrupts.
 
 </details>
 
@@ -146,7 +146,7 @@ There is a specific section of the kernel which conducts interrupt handling. Whe
 <details open>
 <summary>I/O Communication</summary>
 
-The communication of hardware devices, specifically input and output devices, require the kernel to act as an intermediary between the hardware and software layers. These devices send requests to the Kernel, which then returns interrupt and schedules them for execution.
+The communication of hardware devices, specifically input and output devices, require the Kernel to act as an intermediary between the hardware and software layers. These devices send requests to the Kernel, which then returns interrupt and schedules them for execution.
 
 </details>
 
@@ -156,19 +156,19 @@ The communication of hardware devices, specifically input and output devices, re
 
 <br />
 
-As you have likely gathered, much of what we need from our system is handled by the Kernel. Whether we are setting up networking, requesting, or allocating resources, communicating with hardware, or performing any other kind of input/output operation, we are interacting with the OS via the kernel. We can find our kernel file on other systems using the `uname` command, by finding our Linux Kernel version, we can then learn where the kernel file lives in our specific system. We can even replace our kernel if we so wish, this is commonplace in `Arch` as we want to use a long term support kernel (lts).
+As you have likely gathered, much of what we need from our system is handled by the Kernel. Whether we are setting up networking, requesting, or allocating resources, communicating with hardware, or performing any other kind of input/output operation, we are interacting with the OS via the Kernel. We can find our Kernel file on other systems using the `uname` command, by finding our Linux Kernel version, we can then learn where the Kernel file lives in our specific system. We can even replace our Kernel if we so wish, this is commonplace in `Arch` as we want to use a long term support Kernel (lts).
 
-This can be a lot of information, and can be difficult to understand, and even to explain. however, we can think of the Kernel as simply another program on our computer which handles communication with our OS and hardware. It is a layer in our system, it is used by the OS to access the interact with resources (e.g. hardware), we can picture this as another layer in our system. Communicating with the layer is as highly complex task, this is why we have a program (the kernel) dedicated to it. There is also a third layer which we previously mentioned, the user space. The user space is the part of the system the user sees and interacts with (the part YOU are using right now). As such, we can think of the kernel as a translation layer between the user space and the hardware levels.
+This can be a lot of information, and can be difficult to understand, and even to explain. however, we can think of the Kernel as simply another program on our computer which handles communication with our OS and hardware. It is a layer in our system, it is used by the OS to access the interact with resources (e.g. hardware), we can picture this as another layer in our system. Communicating with the layer is as highly complex task, this is why we have a program (the Kernel) dedicated to it. There is also a third layer which we previously mentioned, the user space. The user space is the part of the system the user sees and interacts with (the part YOU are using right now). As such, we can think of the Kernel as a translation layer between the user space and the hardware levels.
 
 <br />
 
 <div align="center">
 
-<img src="../images/kernelcomms.png" alt="kernel comms" style="width: 200px">
+<img src="../images/kernelcomms.png" alt="Kernel comms" style="width: 200px">
 
 </div>
 
-It is important to differentiate between the Kernel and OS as the tight link between them can be confusing, remember, the kernel is NOT the OS. It is a program layer between the user space and hardware. When we talk about Linux we are often talking about the kernel, when we talk about distros we are talking about an installation of packages which have been put together usually encapsulating applications, a desktop environment, a kernel, init systems, and more. Please note that we have only touched on the basics of the kernel here, the kernel is incredibly complex and does many more things on top of these.
+It is important to differentiate between the Kernel and OS as the tight link between them can be confusing, remember, the Kernel is NOT the OS. It is a program layer between the user space and hardware. When we talk about Linux we are often talking about the Kernel, when we talk about distros we are talking about an installation of packages which have been put together usually encapsulating applications, a desktop environment, a Kernel, init systems, and more. Please note that we have only touched on the basics of the Kernel here, the Kernel is incredibly complex and does many more things on top of these.
 
 ___
 
