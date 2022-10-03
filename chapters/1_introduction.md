@@ -1,6 +1,6 @@
 # Introduction To Linux
 
-Linux is a computer Operating System (OS) created in the 90's by a the Finnish engineer [Linux Torvalds](https://en.wikipedia.org/wiki/Linus_Torvalds). An OS is system software that manages computer hardware interaction, system resources, and provides common services for computer programs.
+Linux is a computer Operating System (OS) created in the 90's by a the Finnish engineer [Linus Torvalds](https://en.wikipedia.org/wiki/Linus_Torvalds). An OS is system software that manages computer hardware interaction, system resources, and provides common services for computer programs.
 
 The OS is initially loaded into computer memory by a boot program, the OS manages all other application programs on a computer by allowing application programs to make use of it by making requests for services through a defined Application Programming Interface (API). This allows users to interact directly with the OS through a User Interface (UI), this can be a Graphical User Interface (GUI) or a Command Line interface (CLI).
 

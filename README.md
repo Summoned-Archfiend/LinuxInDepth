@@ -25,6 +25,7 @@ ___
 15. [Web Services](./chapters/15_webservices.md)
 16. [Navigating Linux](./chapters/16_navigation.md)
 17. [Editing Files](./chapters/17_editingfiles.md)
+18. [Searching](./chapters/)
 
 ___
 
