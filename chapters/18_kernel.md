@@ -153,7 +153,7 @@ The communication of hardware devices, specifically input and output devices, re
 </div>
 
 </details>
-
+what-is-kernel-in-operating-system-and-what-are-the-various-types-of-kernel-monolithic-kerne
 <br />
 
 As you have likely gathered, much of what we need from our system is handled by the Kernel. Whether we are setting up networking, requesting, or allocating resources, communicating with hardware, or performing any other kind of input/output operation, we are interacting with the OS via the Kernel. We can find our Kernel file on other systems using the `uname` command, by finding our Linux Kernel version, we can then learn where the Kernel file lives in our specific system. We can even replace our Kernel if we so wish, this is commonplace in `Arch` as we want to use a long term support Kernel (lts).
@@ -164,9 +164,11 @@ This can be a lot of information, and can be difficult to understand, and even t
 
 <div align="center">
 
-<img src="../images/kernelcomms.png" alt="Kernel comms" style="width: 200px">
+<img src="../images/kernelHardwareComml.png" alt="Kernel comms" style="width: 200px">
 
 </div>
+
+<br />
 
 It is important to differentiate between the Kernel and OS as the tight link between them can be confusing, remember, the Kernel is NOT the OS. It is a program layer between the user space and hardware. When we talk about Linux we are often talking about the Kernel, when we talk about distros we are talking about an installation of packages which have been put together usually encapsulating applications, a desktop environment, a Kernel, init systems, and more. Please note that we have only touched on the basics of the Kernel here, the Kernel is incredibly complex and does many more things on top of these.
 
