@@ -10,7 +10,7 @@ This would be highly problematic for engineers developing software as the hardwa
 
 Rather than doing this overly-complex approach, which also breaks the tenets of programming (keeping it DRY for example), many of the common tasks, such as sending network packets, displaying text, etc... can be offloaded to system software that serves as an intermediary between applications and hardware. The system software provides a consistent and repeatable way for applications to interact with hardware without the applications needing to know any details of the hardware.
 
-Using this approach, so long as each application accesses the same resources adn services in the same manner as the system software, the OS is able to service an arbitrary number of applications This reduces the amount of time required to develop and debug an application, whilst still ensuring that users can control, configure and manage their system hardware through a common UI.
+Using this approach, so long as each application accesses the same resources and services in the same manner as the system software, the OS is able to service an arbitrary number of applications This reduces the amount of time required to develop and debug an application, whilst still ensuring that users can control, configure and manage their system hardware through a common UI.
 
 Once installed the OS relies on a vastly large library of device drivers. These tailor the OS services to the specific hardware environment. This means that every application may make a common call to, for example, a storage device, but it is the OS which receives that call, the OS will then use the corresponding driver to translate that call into actions necessary for the underlying hardware on that specific computer.
 

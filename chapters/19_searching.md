@@ -101,6 +101,6 @@ ___
 
 <div align="right">
 
-[<< prev](./18_kernel.md) | [next >>]()
+[<< prev](./18_kernel.md) | [next >>](./20_shortucts.md)
 
 </div>
